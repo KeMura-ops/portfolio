@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kenta Murakamiのポートフォリオ</title>
+  <link rel="stylesheet" href="css/swiper_min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/case.css">
+</head>
+
+<body>
+  <div id="container">
+    <main class="main">
+      <div id="main_visual"></div>
+    </main>
+    <section class="prod">
+      <h1 class="ttl scroll_down">Kenta Murakami</h1>
+      <p class="prod_txt scroll_up">前職での制作実績</p>
+      <div class="ch_area scroll_up">
+        <div class="ch_swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="ch1">
+                <a href="https://wwws.warnerbros.co.jp/minecraft-movie/" target="_blank">
+                  <div class="ch-img">
+                    <img class="pic_re" src="img/case1.jpg" width="959" height="1158.5" loading="lazy" alt="制作実績1">
+                  </div>
+                </a>
+              </div>
+              <p class="ch_desc">
+                ワーナー・ブラザースジャパン様 <a href="https://wwws.warnerbros.co.jp/minecraft-movie/" target="_blank"><span
+                    style="font-weight: bold; color: #f2e50c; text-decoration: underline; text-decoration-color: #f2e50c;">映画『マインクラフト／ザ・ムービー』公式サイト</span></a><br>
+                コーディングを担当
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="ch2">
+                <a href="https://sh-anime.shochiku.co.jp/anime-sentai-daishikkaku/" target="_blank">
+                  <div class="ch-img">
+                    <img class="pic_re" src="img/case2.jpg" width="565.5" height="602" loading="lazy" alt="制作実績2">
+                  </div>
+                </a>
+                <p class="ch_desc">
+                  松竹株式会社様 <a href="https://sh-anime.shochiku.co.jp/anime-sentai-daishikkaku/" target="_blank"><span
+                      style="font-weight: bold; color: #f2e50c; text-decoration: underline; text-decoration-color: #f2e50c;">TVアニメ『戦隊大失格』</span></a><br>
+                  ▼担当箇所<br>
+                  ・2ndシーズン更新のコーディング<br>
+                  ・動画スライダーの実装<br>
+                  ・中ページ：ムービー、ラジオ、スペシャルページの実装<br>
+                  ・TOPページ：フッターアニメーションの実装
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="ch3">
+                <a href="https://wwws.warnerbros.co.jp/onmyoji0/" target="_blank">
+                  <div class="ch-img">
+                    <img class="pic_re" src="img/case3.jpg" width="480.5" height="554" loading="lazy" alt="制作実績3">
+                  </div>
+                </a>
+                <p class="ch_desc">
+                  ワーナー・ブラザースジャパン様 <a href="https://wwws.warnerbros.co.jp/onmyoji0/" target="_blank"><span
+                      style="font-weight: bold; color: #f2e50c; text-decoration: underline; text-decoration-color: #f2e50c;">映画『陰陽師0』公式サイト</span></a><br>
+                  ▼担当<br>
+                  TOPページ、キャラクター&キャスト、プロダクションノート、キーワードページのコーディング
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ch_btn_left swiper-button-prev">
+            <img class="pic_re" src="img/left.png" width="61" height="61" loading="lazy" alt="PREV">
+          </div>
+          <div class="ch_btn_right swiper-button-next">
+            <img class="pic_re" src="img/right.png" width="61" height="61" loading="lazy" alt="NEXT">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <p class="intro_txt">スキル</p>
+      <p class="intro_txt2">
+        ・HTML5/CSS3：経験3年9ヶ月<br>
+        ・JavaScript (Jquery)：経験3年9ヶ月<br>
+        ・その他：Swiper JS、GSAP、JSON、Three JS (趣味、学習程度)
+      </p>
+    </section>
+  </div>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/examples/jsm/": "https://unpkg.com/three@0.160.0/examples/jsm/",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script src="js/swiper_min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.7.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.7.0/dist/ScrollTrigger.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
