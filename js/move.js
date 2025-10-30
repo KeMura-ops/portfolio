@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
-import { GenerateCanvas } from "/js/canvas.js";
+import { GenerateCanvas } from "./canvas.js";
 import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader";
 
 const canvas = GenerateCanvas();
