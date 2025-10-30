@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  background-color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@supports (padding: max(0px)) {
+  html {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+}
+
+.pic_re {
+  width: 100%;
+  height: auto;
+}
+
+.scroll_up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s ease;
+}
+
+.scroll_up.-ready {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #000;
+}
+
+.ttl {
+  position: fixed;
+  top: 512px;
+  left: 80px;
+  width: fit-content;
+  font-size: 110px;
+  color: #f2e50c;
+  z-index: 1;
+}
+
+.ttl.scroll_down.-ready {
+  position: absolute;
+  top: 0;
+}
+
+#container>.main {
+  position: relative;
+  height: 100vh;
+}
+
+#container>.main>#main_visual {
+  position: absolute;
+}
+
+#container .prod {
+  position: relative;
+}
+
+#container .prod>.prod_txt {
+  position: absolute;
+  color: #ffffff;
+  font-size: 30px;
+  top: 160px;
+  left: 81px;
+  z-index: 1;
+}
+
+#container .intro {
+  position: relative;
+}
+
+#container .intro>.intro_txt {
+  position: relative;
+  color: #ffffff;
+  font-size: 30px;
+  top: 0;
+  left: 81px;
+}
+
+#container .intro>.intro_txt2 {
+  position: relative;
+  left: 80px;
+  color: #FFFFFF;
+  padding-bottom: 100px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  .ttl {
+    top: 0;
+    left: 1vw;
+    font-size: 10vw;
+  }
+
+  #container .prod>.prod_txt {
+    top: 13vw;
+    left: 1vw;
+    font-size: calc(30 / 640 * 100vw);
+  }
+
+  #container .intro>.intro_txt {
+    left: 1vw;
+  }
+
+  #container .intro>.intro_txt2 {
+    left: 1vw;
+  }
+}
